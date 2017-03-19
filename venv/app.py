@@ -21,7 +21,7 @@ class User(db.Model):
 
 @app.route('/')
 def index():
-	return render_template('add_user.html',
+	return render_template('add_user.html', name=name)
 
 @app.route('/post_user', methods=['POST'])
 def post_user():
